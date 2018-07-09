@@ -9,4 +9,15 @@
       Debug.Log("HELLO!"); 
     }
   }
+  void OnTriggerExit(Collider other)
+  {
+    if (other.CompareTag ("Player"))
+    {
+      Debug.Log("GOODBYE!");
+    }
+  }
 }
+
+//OnTriggerStay is another one
+
+
