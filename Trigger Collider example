@@ -1,0 +1,12 @@
+{
+  //void=returns no value, OnTriggerEnter=what it sounds like, collider=a component, other=the name we give it
+  void OnTriggerEnter(Collider other) 
+  {
+    //will compare the tag of anything that enters it and look for "player"
+    if (other.CompareTag ("Player")) 
+    {
+      //it will display "HELLO!" in the debug log
+      Debug.Log("HELLO!"); 
+    }
+  }
+}
